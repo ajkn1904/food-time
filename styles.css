@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fonts {
+    font-family: 'Merienda', cursive;
+}
+
+.primary-text {
+    color: #396C03;
+}
+
+.bg-one {
+    background: #6b914211;
+
+}
+
+.navbar {
+    max-width: 1233.58px;
+    margin: auto;
+    padding-bottom: 0%;
+}
+
+#logo {
+    width: 147px;
+    height: 50.72px;
+}
+
+#logo-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28.3446px;
+}
+
+#logo-img {
+    width: 8.98px;
+    height: 17.27px;
+    left: 132px;
+}
+
+.nav-item {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-link:hover{
+    color:#FF8B00;
+}
+
+.btn {
+    background-color: #396C03;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.nav-special-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 23px;
+    width: 242px;
+    height: 65px;
+}
+
+#login-btn {
+    font-size: 20px;
+    width: 154px;
+    height: 58px;
+    padding: 12px 50px;
+    border-radius: 225px;
+}
+
+#cart-btn {
+    width: 65px;
+    height: 65px;
+    color: white;
+    border-radius: 50%;
+
+}
+
+#cart-btn:hover {
+    color: black;
+}
+
+#cart-alert {
+    width: 26px;
+    height: 26px;
+    background-color: #FF8B00;
+    font-weight: 700;
+    font-size: 16px;
+    top: 7px;
+    right: -15px;
+}
+
+
+.nav-item:after {
+    display: block;
+    content: '';
+    border-bottom: 2px solid #FF8B00;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+    transform-origin: 0% 100%;
+}
+
+
+.nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0% 100%;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+    .nav-special-btn {
+margin-top: 10px;
+    }  
+}
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        width: 900px;
+        margin: auto;
+    }
+
+    #logo {
+        margin-right: 20%;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-right: 30px;
+    }
+
+    .nav-special-btn {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #logo {
+        margin-right: 317px;
+    }
+
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-right: 50px;
+    }
+
+    .nav-special-btn {
+        margin-left: 31px;
+    }
+}
